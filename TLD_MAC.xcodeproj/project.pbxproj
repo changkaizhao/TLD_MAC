@@ -1,0 +1,377 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		387F0C1D1D77CB3E00479A62 /* libferNN.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 387F0C1B1D77CB3E00479A62 /* libferNN.a */; };
+		387F0C1E1D77CB3E00479A62 /* libLKTracker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 387F0C1C1D77CB3E00479A62 /* libLKTracker.a */; };
+		FB495A891D3382B700A9C255 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB495A881D3382B700A9C255 /* main.cpp */; };
+		FB495A9B1D3382F900A9C255 /* FerNNClassifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB495A961D3382F900A9C255 /* FerNNClassifier.cpp */; };
+		FB495A9C1D3382F900A9C255 /* LKTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB495A971D3382F900A9C255 /* LKTracker.cpp */; };
+		FB495A9E1D3382F900A9C255 /* TLD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB495A991D3382F900A9C255 /* TLD.cpp */; };
+		FB495A9F1D3382F900A9C255 /* tld_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB495A9A1D3382F900A9C255 /* tld_utils.cpp */; };
+		FB495AA51D33831F00A9C255 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB495AA41D33831F00A9C255 /* Foundation.framework */; };
+		FB495AA71D33832400A9C255 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB495AA61D33832400A9C255 /* CoreGraphics.framework */; };
+		FB495AA91D33832C00A9C255 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB495AA81D33832C00A9C255 /* QuartzCore.framework */; };
+		FB495AAB1D33833600A9C255 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB495AAA1D33833600A9C255 /* CoreVideo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FB495A831D3382B700A9C255 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		387F0C1B1D77CB3E00479A62 /* libferNN.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libferNN.a; path = TLD_MAC/lib/libferNN.a; sourceTree = "<group>"; };
+		387F0C1C1D77CB3E00479A62 /* libLKTracker.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLKTracker.a; path = TLD_MAC/lib/libLKTracker.a; sourceTree = "<group>"; };
+		FB495A851D3382B700A9C255 /* TLD_MAC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TLD_MAC; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB495A881D3382B700A9C255 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FB495A901D3382F000A9C255 /* FerNNClassifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FerNNClassifier.h; sourceTree = "<group>"; };
+		FB495A911D3382F000A9C255 /* LKTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKTracker.h; sourceTree = "<group>"; };
+		FB495A921D3382F000A9C255 /* TLD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLD.h; sourceTree = "<group>"; };
+		FB495A931D3382F000A9C255 /* tld_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tld_utils.h; sourceTree = "<group>"; };
+		FB495A961D3382F900A9C255 /* FerNNClassifier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FerNNClassifier.cpp; sourceTree = "<group>"; };
+		FB495A971D3382F900A9C255 /* LKTracker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LKTracker.cpp; sourceTree = "<group>"; };
+		FB495A991D3382F900A9C255 /* TLD.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TLD.cpp; sourceTree = "<group>"; };
+		FB495A9A1D3382F900A9C255 /* tld_utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tld_utils.cpp; sourceTree = "<group>"; };
+		FB495AA41D33831F00A9C255 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FB495AA61D33832400A9C255 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FB495AA81D33832C00A9C255 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FB495AAA1D33833600A9C255 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		FB495B731D347E4E00A9C255 /* parameters.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = parameters.yml; path = TLD_MAC/parameters.yml; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB495A821D3382B700A9C255 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				387F0C1D1D77CB3E00479A62 /* libferNN.a in Frameworks */,
+				387F0C1E1D77CB3E00479A62 /* libLKTracker.a in Frameworks */,
+				FB495AAB1D33833600A9C255 /* CoreVideo.framework in Frameworks */,
+				FB495AA91D33832C00A9C255 /* QuartzCore.framework in Frameworks */,
+				FB495AA71D33832400A9C255 /* CoreGraphics.framework in Frameworks */,
+				FB495AA51D33831F00A9C255 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB495A7C1D3382B700A9C255 = {
+			isa = PBXGroup;
+			children = (
+				FB495B721D347CCB00A9C255 /* lib */,
+				FB495A871D3382B700A9C255 /* TLD_MAC */,
+				FB495A861D3382B700A9C255 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB495A861D3382B700A9C255 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB495A851D3382B700A9C255 /* TLD_MAC */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB495A871D3382B700A9C255 /* TLD_MAC */ = {
+			isa = PBXGroup;
+			children = (
+				FB495A941D3382F900A9C255 /* src */,
+				FB495A8F1D3382F000A9C255 /* include */,
+				FB495A881D3382B700A9C255 /* main.cpp */,
+			);
+			path = TLD_MAC;
+			sourceTree = "<group>";
+		};
+		FB495A8F1D3382F000A9C255 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				FB495A901D3382F000A9C255 /* FerNNClassifier.h */,
+				FB495A911D3382F000A9C255 /* LKTracker.h */,
+				FB495A921D3382F000A9C255 /* TLD.h */,
+				FB495A931D3382F000A9C255 /* tld_utils.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		FB495A941D3382F900A9C255 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				FB495B731D347E4E00A9C255 /* parameters.yml */,
+				FB495A961D3382F900A9C255 /* FerNNClassifier.cpp */,
+				FB495A971D3382F900A9C255 /* LKTracker.cpp */,
+				FB495A991D3382F900A9C255 /* TLD.cpp */,
+				FB495A9A1D3382F900A9C255 /* tld_utils.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		FB495B721D347CCB00A9C255 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				387F0C1B1D77CB3E00479A62 /* libferNN.a */,
+				387F0C1C1D77CB3E00479A62 /* libLKTracker.a */,
+				FB495AAA1D33833600A9C255 /* CoreVideo.framework */,
+				FB495AA81D33832C00A9C255 /* QuartzCore.framework */,
+				FB495AA61D33832400A9C255 /* CoreGraphics.framework */,
+				FB495AA41D33831F00A9C255 /* Foundation.framework */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB495A841D3382B700A9C255 /* TLD_MAC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB495A8C1D3382B700A9C255 /* Build configuration list for PBXNativeTarget "TLD_MAC" */;
+			buildPhases = (
+				FB495A811D3382B700A9C255 /* Sources */,
+				FB495A821D3382B700A9C255 /* Frameworks */,
+				FB495A831D3382B700A9C255 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TLD_MAC;
+			productName = TLD_MAC;
+			productReference = FB495A851D3382B700A9C255 /* TLD_MAC */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB495A7D1D3382B700A9C255 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "赵常凯";
+				TargetAttributes = {
+					FB495A841D3382B700A9C255 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = FB495A801D3382B700A9C255 /* Build configuration list for PBXProject "TLD_MAC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FB495A7C1D3382B700A9C255;
+			productRefGroup = FB495A861D3382B700A9C255 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB495A841D3382B700A9C255 /* TLD_MAC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB495A811D3382B700A9C255 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB495A9F1D3382F900A9C255 /* tld_utils.cpp in Sources */,
+				FB495A9B1D3382F900A9C255 /* FerNNClassifier.cpp in Sources */,
+				FB495A9C1D3382F900A9C255 /* LKTracker.cpp in Sources */,
+				FB495A891D3382B700A9C255 /* main.cpp in Sources */,
+				FB495A9E1D3382F900A9C255 /* TLD.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FB495A8A1D3382B700A9C255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-lopencv_calib3d",
+					"-lopencv_core",
+					"-lopencv_features2d",
+					"-lopencv_flann",
+					"-lopencv_highgui",
+					"-lopencv_imgproc",
+					"-lopencv_ml",
+					"-lopencv_objdetect",
+					"-lopencv_photo",
+					"-lopencv_stitching",
+					"-lopencv_superres",
+					"-lopencv_ts",
+					"-lopencv_videostab",
+					"-lopencv_video",
+					"-lopencv_legacy",
+				);
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FB495A8B1D3382B700A9C255 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-lopencv_calib3d",
+					"-lopencv_core",
+					"-lopencv_features2d",
+					"-lopencv_flann",
+					"-lopencv_highgui",
+					"-lopencv_imgproc",
+					"-lopencv_ml",
+					"-lopencv_objdetect",
+					"-lopencv_photo",
+					"-lopencv_stitching",
+					"-lopencv_superres",
+					"-lopencv_ts",
+					"-lopencv_videostab",
+					"-lopencv_video",
+					"-lopencv_legacy",
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FB495A8D1D3382B700A9C255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"$(PROJECT_DIR)/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					"$(PROJECT_DIR)/TLD_MAC/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FB495A8E1D3382B700A9C255 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"$(PROJECT_DIR)/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					"$(PROJECT_DIR)/TLD_MAC/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB495A801D3382B700A9C255 /* Build configuration list for PBXProject "TLD_MAC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB495A8A1D3382B700A9C255 /* Debug */,
+				FB495A8B1D3382B700A9C255 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB495A8C1D3382B700A9C255 /* Build configuration list for PBXNativeTarget "TLD_MAC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB495A8D1D3382B700A9C255 /* Debug */,
+				FB495A8E1D3382B700A9C255 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB495A7D1D3382B700A9C255 /* Project object */;
+}
