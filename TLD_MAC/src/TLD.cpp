@@ -101,7 +101,7 @@ void TLD::init(const Mat& frame1,const Rect& box,FILE* bb_file){
   nEx.resize(half);
   //Merge Negative Data with Positive Data and shuffle it
   vector<pair<vector<int>,int> > ferns_data(nX.size()+pX.size());
-  vector<int> idx = index_shuffle(0,ferns_data.size());
+  vector<int> idx = index_shuffle(0,(int)ferns_data.size());
   int a=0;
   for (int i=0;i<pX.size();i++){
       ferns_data[idx[a]] = pX[i];
@@ -228,7 +228,7 @@ void TLD::processFrame(const cv::Mat& img1,const cv::Mat& img2,vector<Point2f>& 
   vector<BoundingBox> cbb;
   vector<float> cconf;
   int confident_detections=0;
-  int didx; //detection index
+  int didx = 0; //detection index
   ///Track
   if(lastboxfound && tl){
       track(img1,img2,points1,points2);
@@ -441,7 +441,7 @@ void TLD::detect(const cv::Mat& frame){
       else
         tmp.conf[i]=0.0;
   }
-  int detections = dt.bb.size();
+  int detections = (int)dt.bb.size();
   printf("%d Bounding boxes passed the variance filter\n",a);
   printf("%d Initial detection from Fern Classifier\n",detections);
   if (detections>100){
@@ -658,7 +658,7 @@ bool bbcomp(const BoundingBox& b1,const BoundingBox& b2){
 }
 int TLD::clusterBB(const vector<BoundingBox>& dbb,vector<int>& indexes){
   //FIXME: Conditional jump or move depends on uninitialised value(s)
-  const int c = dbb.size();
+  const int c = (int)dbb.size();
   //1. Build proximity matrix
   Mat D(c,c,CV_32F);
   float d;
@@ -680,7 +680,7 @@ int TLD::clusterBB(const vector<BoundingBox>& dbb,vector<int>& indexes){
  for (int it=0;it<c-1;it++){
  //3. Find nearest neighbor
      float min_d = 1;
-     int node_a, node_b;
+     int node_a=0, node_b=0;
      for (int i=0;i<D.rows;i++){
          for (int j=i+1;j<D.cols;j++){
              if (D.at<float>(i,j)<min_d && belongs[i]!=belongs[j]){
@@ -722,7 +722,7 @@ int TLD::clusterBB(const vector<BoundingBox>& dbb,vector<int>& indexes){
 }
 
 void TLD::clusterConf(const vector<BoundingBox>& dbb,const vector<float>& dconf,vector<BoundingBox>& cbb,vector<float>& cconf){
-  int numbb =dbb.size();
+  int numbb =(int)dbb.size();
   vector<int> T;
   float space_thr = 0.5;
   int c=1;

@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		387F0C1D1D77CB3E00479A62 /* libferNN.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 387F0C1B1D77CB3E00479A62 /* libferNN.a */; };
-		387F0C1E1D77CB3E00479A62 /* libLKTracker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 387F0C1C1D77CB3E00479A62 /* libLKTracker.a */; };
 		FB495A891D3382B700A9C255 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB495A881D3382B700A9C255 /* main.cpp */; };
 		FB495A9B1D3382F900A9C255 /* FerNNClassifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB495A961D3382F900A9C255 /* FerNNClassifier.cpp */; };
 		FB495A9C1D3382F900A9C255 /* LKTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB495A971D3382F900A9C255 /* LKTracker.cpp */; };
@@ -33,8 +31,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		387F0C1B1D77CB3E00479A62 /* libferNN.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libferNN.a; path = TLD_MAC/lib/libferNN.a; sourceTree = "<group>"; };
-		387F0C1C1D77CB3E00479A62 /* libLKTracker.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLKTracker.a; path = TLD_MAC/lib/libLKTracker.a; sourceTree = "<group>"; };
 		FB495A851D3382B700A9C255 /* TLD_MAC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TLD_MAC; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB495A881D3382B700A9C255 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		FB495A901D3382F000A9C255 /* FerNNClassifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FerNNClassifier.h; sourceTree = "<group>"; };
@@ -57,8 +53,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				387F0C1D1D77CB3E00479A62 /* libferNN.a in Frameworks */,
-				387F0C1E1D77CB3E00479A62 /* libLKTracker.a in Frameworks */,
 				FB495AAB1D33833600A9C255 /* CoreVideo.framework in Frameworks */,
 				FB495AA91D33832C00A9C255 /* QuartzCore.framework in Frameworks */,
 				FB495AA71D33832400A9C255 /* CoreGraphics.framework in Frameworks */,
@@ -122,8 +116,6 @@
 		FB495B721D347CCB00A9C255 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				387F0C1B1D77CB3E00479A62 /* libferNN.a */,
-				387F0C1C1D77CB3E00479A62 /* libLKTracker.a */,
 				FB495AAA1D33833600A9C255 /* CoreVideo.framework */,
 				FB495AA81D33832C00A9C255 /* QuartzCore.framework */,
 				FB495AA61D33832400A9C255 /* CoreGraphics.framework */,
