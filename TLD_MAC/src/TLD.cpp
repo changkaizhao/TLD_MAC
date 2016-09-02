@@ -596,18 +596,35 @@ void TLD::buildGrid(const cv::Mat& img, const cv::Rect& box){
 }
 
 float TLD::bbOverlap(const BoundingBox& box1,const BoundingBox& box2){
-  if (box1.x > box2.x+box2.width) { return 0.0; }
-  if (box1.y > box2.y+box2.height) { return 0.0; }
-  if (box1.x+box1.width < box2.x) { return 0.0; }
-  if (box1.y+box1.height < box2.y) { return 0.0; }
+    //
+    //              +--------------------------+
+    //              |                          |
+    //        +-----+===========+              |
+    //        |     |           |              |
+    // Box1-->|   Area1         |   Area2      |
+    //        |     |intersecti |              |<---Box2
+    //        |     |           |<--rowInt     |
+    //        +-----+===========+              |
+    //              |     ^---colInt           |
+    //              +--------------------------+
+    //
+    //    Area1       : area of Box1
+    //    Area2       : area of Box2
+    //    intersection: area of intersection of Box1 and Box2
+    //
+    //    return:   intersection / (Area1 + Area2 - intersection)  
+    if (box1.x > box2.x+box2.width) { return 0.0; }
+    if (box1.y > box2.y+box2.height) { return 0.0; }
+    if (box1.x+box1.width < box2.x) { return 0.0; }
+    if (box1.y+box1.height < box2.y) { return 0.0; }
 
-  float colInt =  min(box1.x+box1.width,box2.x+box2.width) - max(box1.x, box2.x);
-  float rowInt =  min(box1.y+box1.height,box2.y+box2.height) - max(box1.y,box2.y);
+    float colInt =  min(box1.x+box1.width,box2.x+box2.width) - max(box1.x, box2.x);
+    float rowInt =  min(box1.y+box1.height,box2.y+box2.height) - max(box1.y,box2.y);
 
-  float intersection = colInt * rowInt;
-  float area1 = box1.width*box1.height;
-  float area2 = box2.width*box2.height;
-  return intersection / (area1 + area2 - intersection);
+    float intersection = colInt * rowInt;
+    float area1 = box1.width*box1.height;
+    float area2 = box2.width*box2.height;
+    return intersection / (area1 + area2 - intersection);
 }
 
 void TLD::getOverlappingBoxes(const cv::Rect& box1,int num_closest){
